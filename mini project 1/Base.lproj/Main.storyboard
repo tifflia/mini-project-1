@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,97 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mini_project_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="catnoodle" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lvi-GX-VD9">
+                                <rect key="frame" x="60" y="260" width="294" height="299"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lvi-GX-VD9" secondAttribute="height" multiplier="294:299" id="1EI-gX-awX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tiffany Liang" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xp3-1F-Srt">
+                                <rect key="frame" x="30" y="68" width="354" height="66"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="45"/>
+                                <color key="textColor" red="0.93274600880000003" green="1" blue="0.79233157700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.19861676780000001" green="0.2957669288" blue="0.073326401580000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="5" height="5"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✨ About Me ✨" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6yc-gn-tA1">
+                                <rect key="frame" x="79" y="167" width="256" height="48"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="35"/>
+                                <color key="textColor" red="0.98942583799999995" green="0.91809236999999999" blue="0.50275099280000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="4" height="3"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFx-2i-8fs">
+                                <rect key="frame" x="57" y="768" width="290" height="46"/>
+                                <color key="backgroundColor" red="0.98922675849999997" green="0.91704233681443781" blue="0.50374769337858016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.19926863910000001" green="0.29429391030000002" blue="0.072342269119999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Learn More About Me!" titleAlignment="center">
+                                    <fontDescription key="titleFontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="23"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IFn-2r-de5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="👋 Hi! I'm a 16 year old from Honolulu, Hawaii" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8qX-CR-If5">
+                                <rect key="frame" x="38" y="594" width="339" height="149"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="8qX-CR-If5" secondAttribute="height" multiplier="339:149" id="l3P-Cp-7Lg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="30"/>
+                                <color key="textColor" red="0.93112283949999997" green="1" blue="0.79119074339999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="4" height="3"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMO-0S-yZK">
+                                <rect key="frame" x="181" y="300" width="42" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.41933482090825602" green="0.54470416196842786" blue="0.30892546397295728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6yc-gn-tA1" secondAttribute="trailing" constant="79" id="62M-mL-Nzy"/>
+                            <constraint firstItem="xp3-1F-Srt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="8AC-0c-pAc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lvi-GX-VD9" secondAttribute="trailing" constant="60" id="8MS-bf-IC6"/>
+                            <constraint firstItem="8qX-CR-If5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="FTc-MW-Y31"/>
+                            <constraint firstItem="6yc-gn-tA1" firstAttribute="top" secondItem="xp3-1F-Srt" secondAttribute="bottom" constant="33" id="HNl-z1-dHi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xp3-1F-Srt" secondAttribute="trailing" constant="30" id="L0A-6B-f2f"/>
+                            <constraint firstItem="TFx-2i-8fs" firstAttribute="top" secondItem="8qX-CR-If5" secondAttribute="bottom" constant="25" id="Qli-50-8VY"/>
+                            <constraint firstItem="8qX-CR-If5" firstAttribute="top" secondItem="lvi-GX-VD9" secondAttribute="bottom" constant="35" id="SqR-s3-pk0"/>
+                            <constraint firstItem="lvi-GX-VD9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="WYd-n8-p6F"/>
+                            <constraint firstItem="xp3-1F-Srt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="kX8-Ua-26Z"/>
+                            <constraint firstItem="lvi-GX-VD9" firstAttribute="top" secondItem="6yc-gn-tA1" secondAttribute="bottom" constant="45" id="lM6-c4-jgO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TFx-2i-8fs" secondAttribute="trailing" constant="67" id="o5T-4f-bNo"/>
+                            <constraint firstItem="6yc-gn-tA1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="79" id="t3l-Qo-JbD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8qX-CR-If5" secondAttribute="trailing" constant="37" id="xM6-7l-Ct3"/>
+                            <constraint firstItem="TFx-2i-8fs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="xyU-c0-Mhd"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Ob6-et-X1W"/>
+                    <connections>
+                        <outlet property="mainButton" destination="TFx-2i-8fs" id="fL7-uS-RLF"/>
+                        <outlet property="mainFact" destination="8qX-CR-If5" id="ACV-qS-ZQS"/>
+                        <outlet property="mainImage" destination="lvi-GX-VD9" id="SJI-gL-VQC"/>
+                        <outlet property="mainSubtitle" destination="6yc-gn-tA1" id="tCN-RA-xO5"/>
+                        <outlet property="mainTitle" destination="xp3-1F-Srt" id="4gT-FO-cds"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="81.696428571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="catnoodle" width="591" height="587"/>
+    </resources>
 </document>
